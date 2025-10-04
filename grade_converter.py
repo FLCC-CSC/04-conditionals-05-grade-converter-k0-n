@@ -1,8 +1,8 @@
 # FILE NAME - grade_converter.py
 
-# NAME: 
-# DATE: 
-# BRIEF DESCRIPTION:  
+# NAME: Josh Fielding
+# DATE: 10/4/25
+# BRIEF DESCRIPTION: Convert a percentage grade to a letter grade based on a table 
 
 
 
@@ -15,22 +15,22 @@
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
 
-print('===== Grade Converter =====')
+print("===== Grade Converter =====")
 
-percent = int(input('Enter a numerical grade (1-100): '))
+grade = int(input("Enter a numerical grade (1-100): "))
 
-if percent > 100:
-    print('A+')
-elif percent >= 90:
-    print('A')
-elif percent >= 80:
-    print('B')
-elif percent >= 70:
-    print('C')
-elif percent >= 65:
-    print('D')
-else:
-    print('F')
+if grade < 65:
+   print("F")
+if 65 <= grade < 70:
+   print("D")
+if 70 <= grade < 80:
+   print("C")
+if 80 <= grade < 90:
+   print("B")
+if 90 <= grade <= 100:
+   print("A")
+if grade > 100:
+   print("A+")
 
 ########### END YER CODE ABOVE THIS LINE ###########
 
@@ -85,7 +85,8 @@ D
 1. What is something you would tell a future student to be careful about when
    doing this lab?
 
-
+Make sure to NOT put the '=' symbol next to the greater than and less than symbols in 'if grade < 65:' and 'if grade > 100'
+because it will overlap. When you type 65 or 100, you'll print two letters instead of one.
 
 
 
